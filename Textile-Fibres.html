@@ -3,38 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>TextileGuru</title>
+  <title>TextileGuru - Chemistry of Natural Fibres</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f2f2f2;
-      background-image: url("background.jpg");
-      background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: url("background.jpg") no-repeat center center fixed;
       background-size: cover;
-      background-attachment: fixed; 
-      background-position: center center;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding: 40px 20px;
     }
     .audio-container {
-      margin-bottom: 20px;
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .audio-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
     h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
       margin-bottom: 10px;
-      text-transform: uppercase;
+      color: #343a40;
     }
     a {
-     color: black;
-     text-decoration: none;
+      text-decoration: none;
+      /* color: #007bff; */
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand {
+      color: white !important;
+      font-weight: bold;
+      font-size: 1.4rem;
     }
   </style>
 </head>
 <body oncontextmenu="return false;">
-
+  <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TextileGuru</a>
+    </div>
+  </nav>
+  <div class="container">
     <div class="audio-container">
         <h2>01. Degree of Polymerization</h2>
         <audio controls controlsList="nodownload">
@@ -48,40 +73,37 @@
         </audio>
       </div>
 
-  <div class="audio-container">
-    <h2>03. MOISTURE REGAIN AND MOISTURE CONTENT</h2>
-    <audio controls controlsList="nodownload">
-      <source src="output_audio/03. MOISTURE REGAIN AND MOISTURE CONTENT.mp3" type="audio/mpeg" />
-    </audio>
-  </div>
+    <div class="audio-container">
+      <h2>03. MOISTURE REGAIN AND MOISTURE CONTENT</h2>
+      <audio controls controlsList="nodownload">
+        <source src="output_audio/03. MOISTURE REGAIN AND MOISTURE CONTENT.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
 
-  <div class="audio-container">
-    <h2>04. Classification of textile Fibres</h2>
-    <audio controls controlsList="nodownload">
-      <source src="output_audio/04. Classification of textile Fibres.mp3" type="audio/mpeg" />
-    </audio>
+    <div class="audio-container">
+      <h2>04. Classification of textile Fibres</h2>
+      <audio controls controlsList="nodownload">
+        <source src="output_audio/04. Classification of textile Fibres.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="audio-container" controlsList="nodownload">
+      <h2>05. ESSENTIAL PROPERTIES OF FIBRE</h2>
+      <audio controls>
+        <source src="output_audio/05. ESSENTIAL PROPERTIES OF FIBRE.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="audio-container" controlsList="nodownload">
+      <h2>06. Desirable Properties of fibre</h2>
+      <audio controls>
+        <source src="output_audio/06. Desirable Properties of fibre.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="audio-container" controlsList="nodownload">
+      <h2>07. ORIENTATION</h2>
+      <audio controls>
+        <source src="output_audio/07. ORIENTATION.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
   </div>
-  <div class="audio-container" controlsList="nodownload">
-    <h2>05. ESSENTIAL PROPERTIES OF FIBRE</h2>
-    <audio controls>
-      <source src="output_audio/05. ESSENTIAL PROPERTIES OF FIBRE.mp3" type="audio/mpeg" />
-    </audio>
-  </div>
-  <div class="audio-container" controlsList="nodownload">
-    <h2>06. Desirable Properties of fibre</h2>
-    <audio controls>
-      <source src="output_audio/06. Desirable Properties of fibre.mp3" type="audio/mpeg" />
-    </audio>
-  </div>
-  <div class="audio-container" controlsList="nodownload">
-    <h2>07. ORIENTATION</h2>
-    <audio controls>
-      <source src="output_audio/07. ORIENTATION.mp3" type="audio/mpeg" />
-    </audio>
-  </div>
-  
-
-  
-
 </body>
 </html>
